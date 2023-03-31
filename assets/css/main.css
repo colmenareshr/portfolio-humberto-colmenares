@@ -34,6 +34,21 @@
   display: none;
 }
 
+.hero .container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.hero .container .hero-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.hero .container .left-col .hero-links, .hero .container .left-col li {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5em;
+}
+
 :root {
   --light-background: #fafafa;
   --dark-background: #161b22;
@@ -53,4 +68,8 @@ body {
   font-family: Raleway, sans-serif;
   background: var(--light-background);
   color: var(--black);
+}
+
+.container {
+  padding: 1rem;
 }/*# sourceMappingURL=main.css.map */

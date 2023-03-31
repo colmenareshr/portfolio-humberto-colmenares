@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 @import "header";
+@import "hero-section";
 
 :root {
   --light-background: #fafafa;
@@ -20,6 +21,10 @@ body {
   font-family: Raleway, sans-serif;
   background: var(--light-background);
   color: var(--black);
+}
+
+.container {
+  padding: 1rem;
 }
 
 
