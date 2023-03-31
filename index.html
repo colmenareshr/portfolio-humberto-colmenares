@@ -5,23 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Humberto Colmenares | Portfolio Dev</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
     <section class="header">
       <div class="container">
         <div class="left-col">
           <img src="assets/img/logo-hc.svg" alt="Humberto Colmenares" />
-          <p class="logo">Humberto<span>Colmenares</span></p>
+          <a class="logo" href="#">Humberto<span>Colmenares</span></a>
+          <img
+            src="assets/img/menu.svg"
+            alt="Menubar"
+            class="mobile-menu"
+            id="mobile-cta"
+          />
         </div>
         <div class="right-col">
           <nav>
+            <img
+              src="assets/img/exit.svg"
+              alt="Close menubar"
+              class="mobile-menu-exit"
+              id="mobile-exit"
+            />
             <ul class="menu">
               <li><a href="#sobre-mim">Sobre mim</a></li>
               <li><a href="#skills">Skills</a></li>
               <li><a href="#hobbies">Hobbies</a></li>
               <li><a href="#formacao">Formação</a></li>
               <li><a href="#projetos">Projetos</a></li>
-              <li>
+              <li class="mailto">
                 <a href="mailto:ola@humbertocolmenares.com"
                   >ola@humbertocolmenares.com</a
                 >
@@ -253,11 +268,20 @@
             entrarei em contato o mais rápido possível.
           </p>
           <form action="">
-            <input type="text" name="nome" id="nome" placeholder="Nome">
-            <input type="email" name="email" id="email" placeholder="Email">
-            <input type="text" name="asunto" id="asunto" placeholder="Asunto">
-            <textarea name="message" id="mensegem" cols="50" rows="5"></textarea>
-            <input type="button" value="Enviar mensagem" class="secondary-btn">
+            <input type="text" name="nome" id="nome" placeholder="Nome" />
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <input type="text" name="asunto" id="asunto" placeholder="Asunto" />
+            <textarea
+              name="message"
+              id="mensegem"
+              cols="50"
+              rows="5"
+            ></textarea>
+            <input
+              type="button"
+              value="Enviar mensagem"
+              class="secondary-btn"
+            />
           </form>
         </div>
       </div>
