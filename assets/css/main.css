@@ -58,6 +58,37 @@
   height: 200px;
 }
 
+.skills-hobbies {
+  padding-top: 1.5em;
+  padding-bottom: 1.2em;
+  text-align: center;
+}
+.skills-hobbies .container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 2em;
+}
+.skills-hobbies .container .skills-cards, .skills-hobbies .container .hobbies-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 0.5px rgba(158, 158, 255, 0.2);
+  transition: 0.3s ease-in-out all;
+  padding: 3.5em;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.skills-hobbies .container .skills-cards:hover, .skills-hobbies .container .hobbies-cards:hover {
+  box-shadow: 1px 1px 5px 0.5px rgba(255, 0, 128, 0.3);
+}
+.skills-hobbies h2 {
+  padding: 1.5rem;
+}
+
 :root {
   --light-background: #fafafa;
   --dark-background: #161b22;
