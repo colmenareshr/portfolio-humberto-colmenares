@@ -49,6 +49,15 @@
   padding-top: 0.5em;
 }
 
+.sobre-mim {
+  background: var(--soft-purple);
+  padding-top: 1.2em;
+}
+.sobre-mim img {
+  width: 300px;
+  height: 200px;
+}
+
 :root {
   --light-background: #fafafa;
   --dark-background: #161b22;
