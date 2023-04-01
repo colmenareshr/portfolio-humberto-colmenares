@@ -125,6 +125,53 @@
   border-radius: 5px;
 }
 
+.experiencia {
+  text-align: center;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+.experiencia .experiencia-two-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 1rem;
+}
+.experiencia .reverse {
+  flex-direction: column-reverse;
+}
+.experiencia .buttons {
+  margin-top: 1em;
+}
+.experiencia .buttons .primary-btn {
+  padding: 0.5em 0.6em;
+  margin-right: 0.4em;
+  border-radius: 5px;
+  background-color: var(--dark-background);
+  color: var(--white);
+  font-weight: bold;
+  transition: 8ms ease-in-out all;
+}
+.experiencia .buttons .primary-btn:hover {
+  background-color: var(--soft-purple);
+  color: var(--black);
+}
+.experiencia .buttons .secondary-btn {
+  padding: 0.5em 0.6em;
+  margin-right: 0.4em;
+  border: 1px solid var(--dark-background);
+  border-radius: 5px;
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: bold;
+  transition: 8ms ease-in-out all;
+}
+.experiencia .buttons .secondary-btn:hover {
+  border: 1px solid var(--dark-fucsia);
+  background-color: var(--dark-background);
+  color: var(--white);
+}
+
 :root {
   --light-background: #fafafa;
   --dark-background: #161b22;

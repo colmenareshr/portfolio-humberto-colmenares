@@ -1,0 +1,58 @@
+.experiencia {
+  text-align: center;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+
+  .experiencia-two-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .reverse {
+    flex-direction: column-reverse;
+  }
+
+  .buttons {
+    margin-top: 1em;
+    
+
+    .primary-btn {
+        padding: .5em .6em;
+        margin-right: .4em;
+        border-radius: 5px;
+        background-color: var(--dark-background);
+        color: var(--white);
+        font-weight: bold;
+        transition: 8ms ease-in-out all;
+
+        &:hover {
+          background-color: var( --soft-purple);
+          color: var(--black);
+        }
+    }
+
+    .secondary-btn {
+        padding: .5em .6em;
+        margin-right: .4em;
+        border: 1px solid var(--dark-background);
+        border-radius: 5px;
+        background-color: var(--white);
+        color: var(--black);
+        font-weight: bold;
+        transition: 8ms ease-in-out all;
+
+        &:hover {
+            border: 1px solid var(--dark-fucsia);
+            background-color: var(--dark-background);
+            color: var(--white);
+          }
+      }
+
+    
+  }
+
+  
+}
