@@ -1,0 +1,42 @@
+.formacao {
+  background: var(--soft-purple);
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  text-align: center;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2em;
+
+    .formacao-cards {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: .1rem;
+
+      figure {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background-color: var(--white);
+        padding: 1rem;
+        border-radius: 5px;
+
+      }
+    }
+
+    .cards-img {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 3rem;
+        background-color: var(--white);
+        border-radius: 5px;
+      }
+  }
+  
+  
+}
