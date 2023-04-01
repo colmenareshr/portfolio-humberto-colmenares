@@ -172,6 +172,53 @@
   color: var(--white);
 }
 
+.contact {
+  padding-top: 1.2rem;
+  background-color: var(--soft-purple);
+}
+.contact img {
+  display: none;
+}
+.contact .right-col form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-top: 0.5rem;
+}
+.contact .right-col form input {
+  height: 3.3rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  border-bottom: 1px solid var(--orange);
+  transition: border 0.3s ease-in-out;
+}
+.contact .right-col form input:focus-visible {
+  outline: transparent;
+  border-bottom: 3px solid var(--dark-blue);
+}
+.contact .right-col form input[type=button] {
+  cursor: pointer;
+  background-color: var(--orange);
+  font-weight: bold;
+  transition: 9ms ease-in-out all;
+}
+.contact .right-col form input[type=button]:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+.contact .right-col form textarea {
+  border-radius: 8px;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid var(--orange);
+  transition: border 0.3s ease-in-out;
+}
+.contact .right-col form textarea:focus-visible {
+  outline: transparent;
+  border-bottom: 3px solid var(--dark-blue);
+}
+
 :root {
   --light-background: #fafafa;
   --dark-background: #161b22;
