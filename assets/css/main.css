@@ -38,10 +38,13 @@ body {
   justify-content: space-between;
 }
 .header .container .left-col img {
+  margin-right: 0.5em;
   width: 50px;
   height: 50px;
 }
 .header .container .left-col .logo {
+  display: flex;
+  align-items: center;
   font-size: 1.4em;
   font-weight: bold;
   text-decoration: none;
@@ -51,12 +54,49 @@ body {
   color: var(--dark-blue);
 }
 .header .container .left-col .mobile-menu {
-  width: 25px;
-  height: 25px;
   cursor: pointer;
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  right: 1.1em;
+  bottom: 2em;
+  padding: 0.4em;
+  background-color: rgba(107, 79, 187, 0.5);
+  border-radius: 50%;
 }
 .header .container .right-col .menu {
+  display: block;
+}
+.header .container nav {
   display: none;
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: var(--dark-background);
+  height: 100vh;
+  padding: 1em;
+}
+.header .container nav ul {
+  margin-top: 5em;
+}
+.header .container nav ul li a {
+  color: var(--white);
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: left;
+}
+.header .container nav ul li a:hover {
+  font-weight: bold;
+}
+.header .container .mobile-menu-exit {
+  position: fixed;
+  right: 1.1em;
+  bottom: 2em;
+  margin: 0.5em;
+  cursor: pointer;
 }
 
 .hero .container {
