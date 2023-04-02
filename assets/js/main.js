@@ -1,2 +1,3 @@
-import toggleMenu from "./toggleMenu.js";
+import toggleMenu from './toggleMenu.js';
 
+toggleMenu();
