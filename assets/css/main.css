@@ -67,31 +67,34 @@ body {
 .header .container .right-col .menu {
   display: block;
 }
-.header .container nav {
+.header .container .right-col nav.visible {
+  display: block;
+}
+.header .container .right-col nav {
   display: none;
   position: fixed;
-  z-index: 999;
   width: 66%;
   right: 0;
   top: 0;
   background: var(--dark-background);
   height: 100vh;
   padding: 1em;
+  transition: 0.4s ease-in-out all;
 }
-.header .container nav ul {
+.header .container .right-col nav ul {
   margin-top: 5em;
 }
-.header .container nav ul li a {
+.header .container .right-col nav ul li a {
   color: var(--white);
   display: block;
   padding: 0.5em;
   font-size: 1.3em;
   text-align: left;
 }
-.header .container nav ul li a:hover {
+.header .container .right-col nav ul li a:hover {
   font-weight: bold;
 }
-.header .container .mobile-menu-exit {
+.header .container .right-col .mobile-menu-exit {
   position: fixed;
   right: 1.1em;
   bottom: 2em;
@@ -131,7 +134,7 @@ body {
 .skills-hobbies .container {
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(9.25rem, 1fr));
   gap: 2em;
 }
 .skills-hobbies .container .skills-cards, .skills-hobbies .container .hobbies-cards {
@@ -154,6 +157,11 @@ body {
   padding: 1.5rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .skills-hobbies .container {
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  }
+}
 .formacao {
   background: var(--soft-purple);
   padding-top: 1.2em;
@@ -262,13 +270,13 @@ body {
   outline: transparent;
   border-bottom: 3px solid var(--dark-blue);
 }
-.contact .right-col form input[type=button] {
+.contact .right-col form input[type=submit] {
   cursor: pointer;
   background-color: var(--orange);
   font-weight: bold;
   transition: 9ms ease-in-out all;
 }
-.contact .right-col form input[type=button]:hover {
+.contact .right-col form input[type=submit]:hover {
   background-color: var(--dark-blue);
   color: var(--white);
 }

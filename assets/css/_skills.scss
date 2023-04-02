@@ -6,7 +6,7 @@
   .container {
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(9.25rem, 1fr));
     gap: 2em;
 
     .skills-cards, .hobbies-cards {
@@ -30,5 +30,15 @@
 
   h2 {
     padding: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .skills-hobbies {
+    
+    .container {
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+
+    }
   }
 }
