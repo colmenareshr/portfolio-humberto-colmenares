@@ -127,7 +127,7 @@ h2 {
     gap: 1rem;
   }
   .header .container .left-col .logo {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .header .container .right-col .menu {
     display: flex;
@@ -148,6 +148,7 @@ h2 {
   .header .container .right-col nav ul li a {
     color: var(--black);
     padding: 0;
+    font-size: 1.1em;
   }
 }
 .hero .container {
