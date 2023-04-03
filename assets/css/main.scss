@@ -28,20 +28,24 @@ section {
 }
 
 .container {
-  padding: 1rem 3.5rem;
+  padding: 1.1rem;
 }
 
 h2 {
-  font-size: 2rem
+  font-size: 2rem;
 }
 
-@import "header";
-@import "hero-section";
-@import "about";
-@import "skills";
-@import "formacao";
-@import "experiencia";
-@import "contact";
-@import "footer";
+@import 'header';
+@import 'hero-section';
+@import 'about';
+@import 'skills';
+@import 'formacao';
+@import 'experiencia';
+@import 'contact';
+@import 'footer';
 
-
+@media only screen and (min-width: 1440px) {
+  .container {
+    padding: 1rem 3.5rem;
+  }
+}

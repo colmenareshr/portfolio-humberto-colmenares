@@ -27,7 +27,7 @@ section {
 }
 
 .container {
-  padding: 1rem 3.5rem;
+  padding: 1.1rem;
 }
 
 h2 {
@@ -438,4 +438,10 @@ h2 {
   background-color: var(--white);
   border-top: 1px solid rgba(252, 109, 38, 0.5);
   padding-top: 1em;
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    padding: 1rem 3.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */
