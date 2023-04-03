@@ -1,5 +1,4 @@
 .contact {
-  padding-top: 1.2rem;
   background-color: var(--soft-purple);
 
   img {
@@ -7,52 +6,81 @@
   }
 
   .right-col {
-
     form {
-        display: flex;
-        flex-direction: column;
-        gap: .5em;
-        margin-top: .5rem;
-    
-        input {
-          height: 3.3rem;
-          padding: .5rem;
-          border-radius: 8px;
-          border: none;
-          border-bottom: 1px solid var(--orange);
-          transition: border 0.3s ease-in-out;
-          
-          &:focus-visible {
-            outline: transparent;
-            border-bottom: 3px solid var(--dark-blue);
-          }
-        }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.7em;
+      // margin-top: 0.5rem;
 
-        input[type="submit"] {
-          cursor: pointer;
-          background-color: var(--orange);
-          font-weight: bold;
-          transition: 9ms ease-in-out all;
+      input {
+        height: 3.3rem;
+        padding: 0.5rem;
+        border-radius: 8px;
+        border: none;
+        border-bottom: 1px solid var(--orange);
+        transition: border 0.3s ease-in-out;
 
-          &:hover {
-            background-color: var(--dark-blue);
-            color: var(--white);
-          }
-        }
-        
-        textarea {
-          border-radius: 8px;
-          padding: .5rem;
-          border: none;
-          border-bottom: 1px solid var(--orange);
-          transition: border 0.3s ease-in-out;
-
-          &:focus-visible {
-              outline: transparent;
-              border-bottom: 3px solid var(--dark-blue);
-            }
+        &:focus-visible {
+          outline: transparent;
+          border-bottom: 3px solid var(--dark-blue);
         }
       }
+
+      input[type='submit'] {
+        cursor: pointer;
+        background-color: var(--orange);
+        font-weight: bold;
+        transition: 9ms ease-in-out all;
+
+        &:hover {
+          background-color: var(--dark-blue);
+          color: var(--white);
+        }
+      }
+
+      textarea {
+        border-radius: 8px;
+        padding: 0.5rem;
+        border: none;
+        border-bottom: 1px solid var(--orange);
+        transition: border 0.3s ease-in-out;
+
+        &:focus-visible {
+          outline: transparent;
+          border-bottom: 3px solid var(--dark-blue);
+        }
+      }
+    }
   }
-  
+}
+
+@media only screen and (min-width: 1440px) {
+  .contact {
+    .container {
+      width: 100%;
+      // min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+
+      .left-col {
+        img {
+          width: 464px;
+          height: 593px;
+          display: block;
+        }
+      }
+      
+      .right-col {
+        height: 593px;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        
+      }
+    }
+  }
 }

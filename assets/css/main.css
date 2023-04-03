@@ -21,6 +21,11 @@ body {
   color: var(--black);
 }
 
+section {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
 .container {
   padding: 1rem 3.5rem;
 }
@@ -362,7 +367,6 @@ h2 {
   }
 }
 .contact {
-  padding-top: 1.2rem;
   background-color: var(--soft-purple);
 }
 .contact img {
@@ -371,8 +375,8 @@ h2 {
 .contact .right-col form {
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
-  margin-top: 0.5rem;
+  justify-content: space-between;
+  gap: 1.7em;
 }
 .contact .right-col form input {
   height: 3.3rem;
@@ -408,6 +412,27 @@ h2 {
   border-bottom: 3px solid var(--dark-blue);
 }
 
+@media only screen and (min-width: 1440px) {
+  .contact .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .contact .container .left-col img {
+    width: 464px;
+    height: 593px;
+    display: block;
+  }
+  .contact .container .right-col {
+    height: 593px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 .footer {
   text-align: center;
   background-color: var(--white);
