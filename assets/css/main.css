@@ -342,6 +342,25 @@ h2 {
   color: var(--white);
 }
 
+@media only screen and (min-width: 1440px) {
+  .experiencia .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .experiencia .container .experiencia-two-col {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+  }
+  .experiencia .container .experiencia-two-col img {
+    width: calc(60% - 1em);
+  }
+  .experiencia .container .experiencia-two-col .left-col {
+    width: calc(40% - 1em);
+  }
+}
 .contact {
   padding-top: 1.2rem;
   background-color: var(--soft-purple);
