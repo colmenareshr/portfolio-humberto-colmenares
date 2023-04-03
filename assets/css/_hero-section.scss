@@ -43,7 +43,7 @@
 @media only screen and (min-width: 1440px) {
   .hero {
     .container {
-      justify-content: center;
+      justify-content: space-between;
 
       h1 {
         font-size: 3.25rem;
@@ -55,9 +55,6 @@
       }
     }
     .left-col {
-      width: 100%;
-      max-width: 1000px;
-
       .hero-links {
         display: flex;
         align-items: center;

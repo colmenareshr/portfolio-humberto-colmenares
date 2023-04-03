@@ -16,12 +16,14 @@
 
 body {
   font-family: Raleway, sans-serif;
+  font-size: 1.1em;
+
   background: var(--light-background);
   color: var(--black);
 }
 
 .container {
-  padding: 1rem;
+  padding: 1rem 3.5rem;
 }
 
 @import "header";

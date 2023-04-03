@@ -91,20 +91,19 @@
   }
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1440px) {
   .mobile-menu,
   .mobile-menu-exit {
     visibility: hidden;
   }
 
   .header {
-    width: 100%;
-    padding: 1em 2.5em;
+    padding: 1rem 3.5rem;
     .container {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 1em;
+      gap: 1rem;
 
       .left-col {
         .logo {
@@ -118,7 +117,7 @@
           justify-content: space-between;
           gap: 1rem;
         }
-      }
+      } 
 
       .right-col nav {
         position: static;
