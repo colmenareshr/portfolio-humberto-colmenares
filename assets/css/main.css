@@ -25,6 +25,10 @@ body {
   padding: 1rem 3.5rem;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 .header {
   padding-top: 1em;
   background-color: var(--white);
@@ -213,6 +217,11 @@ body {
   height: 200px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .sobre-mim .container {
+    width: calc(75% - 1em);
+  }
+}
 .skills-hobbies {
   padding-top: 1.5em;
   padding-bottom: 1.2em;
