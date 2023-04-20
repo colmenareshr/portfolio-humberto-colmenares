@@ -362,30 +362,48 @@
             Quer entrar em contato comigo?<br />Preencha o formulário ao lado e
             entrarei em contato o mais rápido possível.
           </p>
-          <form action="">
+          <form action="" id="formulario">
             <input
               type="text"
               name="nome"
-              id="nome"
+              id="input-nome"
               placeholder="Nome"
-              required
+              autocomplete="off"
             />
+            <p id="error-nome" class="input-nome-error">
+              *O campo do nome deve conter letras minúsculas, letras maiúsculas
+              e espaços.
+            </p>
             <input
               type="email"
               name="email"
-              id="email"
+              id="input-email"
               placeholder="Email"
-              required
+              autocomplete="off"
             />
+            <p id="error-email" class="input-email-error">
+              O campo de e-mail é inválido
+            </p>
             <input type="text" name="asunto" id="asunto" placeholder="Asunto" />
             <textarea
-              name="message"
-              id="mensegem"
+              name="mensagem"
+              id="mensagem"
               cols="50"
               rows="5"
-              required
+              placeholder="Escreva o seu mensagem"
+              autocomplete="off"
             ></textarea>
-            <input type="submit" value="Enviar mensagem" />
+            <input type="submit" id="submit" value="Enviar mensagem" />
+            <div class="mensagem-form">
+              <p class="mensagem__form-sucesso" id="mensagem__form-sucesso">
+                Enviando...
+              </p>
+            </div>
+            <div class="mensagem-form">
+              <p class="mensagem__form-erro" id="mensagem__form-erro">
+                Por favor, Preencha o formulario corretamente
+              </p>
+            </div>
           </form>
         </div>
       </div>

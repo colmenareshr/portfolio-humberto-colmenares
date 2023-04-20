@@ -385,7 +385,6 @@ h2 {
   border-radius: 8px;
   border: none;
   border-bottom: 1px solid var(--orange);
-  transition: border 0.3s ease-in-out;
 }
 .contact .right-col form input:focus-visible {
   outline: transparent;
@@ -395,7 +394,7 @@ h2 {
   cursor: pointer;
   background-color: var(--orange);
   font-weight: bold;
-  transition: 9ms ease-in-out all;
+  transition: 4ms ease-in-out all;
 }
 .contact .right-col form input[type=submit]:hover {
   background-color: var(--dark-blue);
@@ -412,6 +411,51 @@ h2 {
   outline: transparent;
   border-bottom: 3px solid var(--dark-blue);
 }
+.contact .right-col form .input-invalid {
+  height: 3.3rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 3px solid red;
+}
+.contact .right-col form .input-invalid:focus-visible {
+  border-bottom: 3px solid red;
+}
+.contact .right-col .input-nome-error {
+  display: none;
+  color: red;
+  font-weight: 700;
+}
+.contact .right-col .input-email-error {
+  display: none;
+  color: red;
+  font-weight: 700;
+}
+.contact .right-col .erro-ativo {
+  display: block;
+}
+.contact .right-col .mensagem__form-sucesso {
+  display: none;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--black);
+}
+.contact .right-col .ativo {
+  display: block;
+}
+.contact .right-col .mensagem__form-erro {
+  display: none;
+  text-align: center;
+  background-color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ff0000;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.contact .right-col .ativo-erro {
+  display: block;
+}
 
 @media only screen and (min-width: 1440px) {
   .contact .container {
@@ -427,7 +471,6 @@ h2 {
     display: block;
   }
   .contact .container .right-col {
-    height: 593px;
     margin-top: 0;
     display: flex;
     flex-direction: column;
